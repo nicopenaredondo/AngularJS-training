@@ -4,7 +4,7 @@ animateApp.config(function($routeProvider){
 
   $routeProvider
 
-    .when('/home',{
+    .when('/',{
       templateUrl: 'partial/home.html',
       controller : 'mainController'
     })
@@ -18,6 +18,8 @@ animateApp.config(function($routeProvider){
       templateUrl: 'partial/contact.html',
       controller : 'contactController'
     });
+
+  $routeProvider.otherwise({ redirectTo : '/'});
 
 });
 
