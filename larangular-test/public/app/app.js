@@ -1,4 +1,4 @@
-var larangularTestApp = angular.module('larangularTestApp', ['ui.router']);
+var larangularTestApp = angular.module('larangularTestApp', ['ui.router', 'xeditable']);
 
 larangularTestApp.config(function($stateProvider, $urlRouterProvider){
 
