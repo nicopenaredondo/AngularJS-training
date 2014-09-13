@@ -10,7 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        {{ HTML::style('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css') }}
+        {{ HTML::style('bower_components/angular-xeditable/dist/css/xeditable.css') }}
         <style>
             body {
                 padding-top: 50px;
@@ -66,6 +67,7 @@
 
     {{ HTML::script('bower_components/angular/angular.min.js') }}
     {{ HTML::script('bower_components/angular-ui-router/release/angular-ui-router.min.js') }}
+    {{ HTML::script('bower_components/angular-xeditable/dist/js/xeditable.js') }}
 
     {{ HTML::script('app/app.js') }}
     </body>
